@@ -42,6 +42,7 @@ function App() {
     <Alert alert={alert}/>
     {/* <TextForm alert={alert} showAlert={showAlert}  mode={mode} /> */}
     <Routes>
+          <Route exact path="/my-app" element={<TextForm alert={alert} showAlert={showAlert}  mode={mode} />}></Route>
           <Route exact path="/" element={<TextForm alert={alert} showAlert={showAlert}  mode={mode} />}></Route>
           <Route exact path="/about" element={<AccComp mode={mode} ></AccComp>} >
           </Route>
