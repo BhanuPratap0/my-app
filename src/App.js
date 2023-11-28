@@ -37,15 +37,16 @@ function App() {
   }
   return (
     <>
-    <BrowserRouter>
+    {/* <BrowserRouter> */}
     <NavBar title="TextUtil" mode={mode} toggleMode={toggleMode} />
     <Alert alert={alert}/>
-    <Routes>
+    <TextForm alert={alert} showAlert={showAlert}  mode={mode} />
+    {/* <Routes>
           <Route exact path="/" element={<TextForm alert={alert} showAlert={showAlert}  mode={mode} />}></Route>
           <Route exact path="/about" element={<AccComp></AccComp>} >
           </Route>
     </Routes>
-    </BrowserRouter>
+    </BrowserRouter> */}
     </>
   );
 }
