@@ -6,7 +6,7 @@ import AccComp from './components/AccComp';
 import { useState } from 'react';
 import Alert from './components/Alert';
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+// import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   const [mode,setMode]=useState('light');
