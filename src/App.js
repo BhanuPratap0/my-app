@@ -6,7 +6,7 @@ import AccComp from './components/AccComp';
 import { useState } from 'react';
 import Alert from './components/Alert';
 import React from "react";
-// import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   const [mode,setMode]=useState('light');
@@ -37,16 +37,16 @@ function App() {
   }
   return (
     <>
-    {/* <BrowserRouter> */}
+    <BrowserRouter>
     <NavBar title="TextUtil" mode={mode} toggleMode={toggleMode} />
     <Alert alert={alert}/>
-    <TextForm alert={alert} showAlert={showAlert}  mode={mode} />
-    {/* <Routes>
+    {/* <TextForm alert={alert} showAlert={showAlert}  mode={mode} /> */}
+    <Routes>
           <Route exact path="/" element={<TextForm alert={alert} showAlert={showAlert}  mode={mode} />}></Route>
           <Route exact path="/about" element={<AccComp></AccComp>} >
           </Route>
     </Routes>
-    </BrowserRouter> */}
+    </BrowserRouter>
     </>
   );
 }
